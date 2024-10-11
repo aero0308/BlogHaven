@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Folio</title>
+</head>
+<body>
+    <h1 style="color:#311B92 ; text-align: center; font-size: 300%;">✦ Form Folio ✦</h1>
+    <hr>
+    
+    <form action="action_page.html">
+        <fieldset style="background-color: #EDE7F6;">
+            <legend style="background-color: #EDE7F6;"> ENTER YOUR DETAILS </legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Full Name">
+            <br>
+            <br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="example@gmail.com">
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter gmail password">
+            <br>
+            <br>
+            <!-- can also use para and convert para's block element to inline element using style="display:inline"; -->
+            <span>Gender:</span>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Other</label>
+            <br>
+            <br>
+            <label for="counter">Age:</label>
+            <input type="number" name="counter" id="counter" min="0" max="120">
+            <br>
+            <br>
+            <label for="dob">Date of Birth : </label>
+            <input type="date" id="dob">
+            <br>
+            <br>
+            <label for="country">Select Your Country:</label>
+            <select name="country" id="country">
+                <!-- can use disabled also instead of hidden -->
+                <option  selected hidden>Select</option>
+                <option value="Australia">Australia</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Canada">Canada</option>
+                <option value="China">China</option>
+                <option value="Germany">Germany</option>
+                <option value="India">India</option>
+                <option value="Japan">Japan</option>
+                <option value="Russia">Russia</option>
+                <option value="United States">United States</option>
+            </select>
+            <br>
+            <br>
+            <label for="Address">Your Address:</label>
+            <input type="text" id="Address" placeholder="House No. , Area , State">
+            <br>
+            <br>
+            <label for="English">English:</label>
+            <input type="checkbox" id="English">
+            <label for="Hindi">Hindi:</label>
+            <input type="checkbox" id="Hindi">
+            <br>
+            <br>
+            <label for="about you">About yourself:</label>
+            <br>
+            <textarea name="description" id="about you" cols="30" rows="5" placeholder="enter text here..."></textarea>
+            <br>
+            <br>
+            <label for="photo">Upload your photo:</label>
+            <input type="file" id="photo">
+            <br>
+            <br>
+            <label for="TnC">"By selecting this checkbox, you confirm that all the information provided is accurate and consent to its storage in our database.":</label>
+            <input type="checkbox" id="TnC">
+            <br>
+            <br>
+            <!-- can use botton tag also instead of input type = "submit" -->
+            <label for="submit"><strong>RECHECK</strong> filled details then click on <strong>Submit</strong> botton : </label>
+            <input type="submit" id="submit" value="Submit">
+            <br>
+            <br>
+            <br>
+            <!-- to add image button use - > 
+            <label for="image"></label>
+            <input type="image" src="button.jgp" id="image" alt="this is button" width="10px" height="10px"> -->
+        </fieldset>
+    
+    </form>
+
+</body>
+</html>
