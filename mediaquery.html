@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .container{
+            height: 539px;
+            border: 2px;
+            border-style:dashed;
+            border-radius: 10px;
+            display: flex;
+            /* flex-direction: row; */
+
+        }
+
+        #pic{
+            height: 518px;
+            width: 690px;
+            /* position: relative;
+            top: 8px;
+            left: 10px; */
+             
+        }
+        #about{
+            height: 500px;
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: right; */
+            
+        }
+        #para1{
+            font-size: 17px;
+            font-style: italic;
+            height: 260px;
+            width: 500px;
+            background-color: rgba(127, 255, 212, 0.425);
+            padding: 5px;
+            border: 2px dashed rgb(5, 216, 249);
+            /* position: absolute;
+            left: 719px;
+            bottom: 250px; */
+        }
+        #para2{
+            font-size: 17px;
+            font-style: italic;
+            height: 220px;
+            width: 500px;
+            background-color: rgba(189, 127, 255, 0.425);
+            padding: 5px;
+            border: 2px dashed rgb(50, 5, 249);
+            /* position: absolute;
+            left: 719px;
+            top: 287px; */
+        }
+
+        @media screen and (max-width:700px) {
+            .container{
+                flex-direction: column;
+            }
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div id="pic">
+            <img src="..\images\gojo.png" alt="GOJO" height="517px" width="680px">
+        </div>
+        <div id="about">
+            <p id="para1">Satoru is overconfident in his abilities and reputation as a powerful sorcerer, believing himself to be invincible. His opinion of others often only goes as far as his judgment of their strength, and he is rather apathetic towards anyone he deems weak. Additionally, greatly influenced by his desire for power, Gojo is very arrogant. He believes himself to be the strongest in the world (which he technically is), claiming, during his fight with Toji Fushiguro, that "throughout the Heavens and earth, he alone is the honored one." It is evident during his task of protecting Riko Amanai, one of the few 'weak' people he genuinely grew to show compassion for. However, his regret for her death was negated by his extensive pride and arrogance after perfecting his reverse cursed technique in his following battle against Toji Fushiguro.</p>
+            <p id="para2">During intense battles, Satoru occasionally falls into a manic fighting state, urged by his determination for victory and undeniable proof that he alone is the strongest. His combative style is characterized by his aggressive and domineering attacks while flaunting his mastered techniques to his opponents. Furthermore, in a crisis, he is capable of being cold-blooded. He will prioritize his enemies' destruction over saving innocent people when he believes that the sacrifice is unavoidable. However, this only extends to the people killed by his opponent; he will not do any lasting harm to or kill anyone innocent to gain the upper hand.</p> 
+        </div>
+    </div>
+</body>
+</html>
