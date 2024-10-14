@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: #74EBD5;
+            background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            height: 510px;
+            width: 300px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 15px;
+            gap:23px;
+            box-shadow: 0px 0px 30px black;
+        }
+        .card img{
+            height: 32%;
+            width: 100%;
+            /* padding: 15px; */
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .card h3{
+            font-size: 20px;
+            /* text-align: center; */
+            font-weight: 900px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .card p{
+            font-size: 15px;
+            text-align: center;
+
+        }
+        .plan{
+            height: 10%;
+            width: 85% ;
+            background-color: #3e91c9;
+            display: flex;
+            flex-direction: row;
+            border-radius: 10px;
+            justify-content: space-between;
+            align-items: center;
+            gap:12px;
+        }
+        .leftBox{
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+        .leftBox img{
+            height: 43px;
+            width: 43px;
+        }
+        .text{
+            font-size: 11px;
+            color: white;
+            text-align:center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .rightBox{
+            padding: 10px;;
+        }
+        .plan a{
+            font-size:14px ;
+            font-weight:900;
+            text-decoration: none;
+            color: rgb(6, 0, 53);
+        }
+        .button{
+            height: 50px;
+            width: 85%;
+            border-radius:10px;
+            background-color: #010548;
+            color: white;
+            box-shadow:2px 4px 12px black ;
+        }
+        .card a{
+            font-weight: bolder;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+        }
+        @media screen and (max-width:237px) {
+            .plan{
+                flex-direction: column;
+                width: auto;
+                height: auto;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSposEklZdvvndx-ICLd_SVZxRgZDraW8zcpg&s" alt="css">
+            <h3>Order Summary</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis dicta, quod assumenda omnis repellendus esse?</p>
+            <div class="plan">
+                <div class="leftBox">
+                    <img src="../formfolio/icons8-form-48.png" alt="logo">
+                    <div class="text">
+                        <span>Annual Plan</span> 
+                        <br>
+                        <span>$99.9/year</span>
+                    </div>
+                </div>
+                <div class="rightBox">
+                    <a href="#">Change</a>
+                </div>
+            </div>
+            <button class="button">Proceed to Payment</button>
+            <a href="#">Cancel Order</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+    }
+    .container{
+        height: 100vh;
+        width: 100vw;
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(151,41,247,1) 0%, rgba(24,22,39,1) 90% );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        height: 60%;
+        width: 60%;
+        background-color: #460046;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0px 0px 30px black;
+    }
+    .leftBox{
+        height: 100%;
+        width: 50%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .leftBox h1{
+        padding: 15px;
+    } 
+    .leftBox p{
+        padding: 10px;
+    }
+    .reachBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style: none;
+        gap:40px;
+    }
+    .rightBox {
+        height: 100%;
+        width: 50%;
+    }
+    .rightBox img{
+        height: 100%;
+        width: 100%;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="leftBox">
+                <h1>Get insightsthat help your business grow</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nesciunt aliquam fugit voluptates corporis nulla</p>
+                <div >
+                    <ul class="reachBox">
+                        <li>
+                            <h2>10K+</h2>
+                            <span>Comments</span>
+                        </li>
+                        <li>
+                            <h2>214</h2>
+                            <span>Paid Users</span>
+                        </li>
+                        <li>
+                            <h2>12M+</h2>
+                            <span>Views</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rightBox">
+                <img src="https://img.freepik.com/free-vector/business-stock-market-background-with-shiny-growth-arrow_1017-53572.jpg" alt="image">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
