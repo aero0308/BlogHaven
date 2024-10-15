@@ -34,6 +34,8 @@
     
 }
 
+
+
 .navList{
     height: 60px;
     width: 100vw;
@@ -99,6 +101,27 @@ button {
 
 a{
     text-decoration: none;
+}
+
+@media (max-width:550px) {
+    .navItems{
+        gap: 11px;
+        margin: 2px;
+    }
+    .navList{
+        padding: 2px;
+    }
+    .logo{
+        margin: 0px;
+        padding: 0px;
+    }
+    button{
+        height:30px ;
+        width: 30px;
+    }
+    .header_title{
+        margin-top: 20px;
+    }
 }
 
 .container{
